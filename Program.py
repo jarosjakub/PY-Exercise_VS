@@ -1,5 +1,10 @@
-age = int(input("Enter age \n"))
-if age >= 18 and age <= 60:
-    print("Can work")
+char = input("Enter a lowercase character \n")
+
+if char == "a" or char == "e" or char == "i" or char == "o" or char == "u" or char == "y":
+    print("Vowel")
 else:
-    print("Cannot work")
+    print("Consonant")
+
+    
+
+
