@@ -1,5 +1,12 @@
-base_big = int(input("Enter a bigger base of a trapezoid"))
-base_small = int(input("Enter a  smaller base of a trapezoid"))
-height = int(input("Enter a height of a trapezoid"))
-area = (base_big + base_small) * height / 2
-print("Area is", area)
+a = int(input("Enter a "))
+b = int(input("Enter b "))
+c = int(input("Enter c "))
+discriminant = b**2 - 4 * a * c 
+root1 = (-b + (discriminant ** 0.5)) / (2 * a)
+root2 = (-b - (discriminant ** 0.5)) / (2 * a)
+
+print ("Root 1 is: ", root1, "Root 2 is: ", root2)
+
+check1 = (a * root1 ** 2) + (b * root1) + c 
+check2 = (a * root2 ** 2) + (b * root2) + c 
+print ("Check 1 is: ", check1, "Check 2 is: ", check2)
