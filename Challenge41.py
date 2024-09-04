@@ -1,22 +1,14 @@
-#---------------------------------------- Take a number and display day name
-# day_input = int(input("Enter a day number \n"))
+#---------------------------------------- Calculate discounted amount
+# amount = int(input("Enter the order amount \n"))
 
-# day = day_input % 7
-
-# if day == 1:
-#     print("Sunday")
-# elif day == 2:
-#     print("Monday")
-# elif day == 3:
-#     print("Tuesday")
-# elif day == 4:
-#     print("Wednesday")
-# elif day == 5:
-#     print("Thursday")
-# elif day == 6:
-#     print("Friday")
-# else:
-#     print("Saturday")
+# if amount <= 1000:
+#     print("Your discount is 10 %, please pay ", int(amount * 0.9))
+# elif amount > 1000 and amount <= 5000:                 
+#     print("Your discount is 20 %, please pay ", int(amount * 0.8))
+# elif amount > 5000 and amount <= 10000:                
+#     print("Your discount is 30 %, please pay ", int(amount * 0.7))
+# else:                                                  
+#     print("Your discount is 50 %, please pay ", int(amount * 0.5))
 
 
 

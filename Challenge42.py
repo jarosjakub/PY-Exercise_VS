@@ -1,16 +1,22 @@
-#---------------------------------------- Leap year or not
-# year = int(input("Enter a year \n"))
+#---------------------------------------- Take a number and display day name
+# day_input = int(input("Enter a day number \n"))
 
-# y4 = year % 4 == 0
-# y100 = year % 100 == 0
-# y400 = year % 400 == 0
+# day = day_input % 7
 
-# if y400:
-#     print ("This is a leap year")
-# elif y4 and not y100:
-#     print ("This is a leap year")
+# if day == 1:
+#     print("Sunday")
+# elif day == 2:
+#     print("Monday")
+# elif day == 3:
+#     print("Tuesday")
+# elif day == 4:
+#     print("Wednesday")
+# elif day == 5:
+#     print("Thursday")
+# elif day == 6:
+#     print("Friday")
 # else:
-#     print ("This is not a leap year")
+#     print("Saturday")
 
 
 
