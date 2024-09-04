@@ -1,10 +1,11 @@
-char = input("Enter a lowercase character \n")
+amount = int(input("Enter the order amount \n"))
 
-if char == "a" or char == "e" or char == "i" or char == "o" or char == "u" or char == "y":
-    print("Vowel")
+if amount <= 1000:
+    print("Your discount is 10 %")
+elif amount > 1000 and amount <= 5000:
+    print("Your discount is 20 %")
+elif amount > 5000 and amount <= 10000:
+    print("Your discount is 30 %")
 else:
-    print("Consonant")
-
-    
-
+    print("Your discount is 50 %")
 
