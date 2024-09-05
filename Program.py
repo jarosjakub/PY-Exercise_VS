@@ -1,16 +1,12 @@
-number = int(input("Enter number of terms \n"))
-print("---------------")
+number = int(input("Enter a number \n"))
 
-fib1 = 0
-fib2 = 1
-fib = 0
+prime = 0
+for i in range(2, number):
+    if number % i == 0:
+        prime += 1
 
-print(fib1)
-print(fib2)
-
-for i in range(0, number-2):
-    fib = fib1 + fib2
-    print (fib)
-    fib1 = fib2
-    fib2 = fib
+if prime == 0:
+    print(number, "is a prime number")
+else:
+    print(number, "is not a prime number")
 
