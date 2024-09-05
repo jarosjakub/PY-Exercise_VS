@@ -1,15 +1,7 @@
-import random
+number = int(input("Enter a number \n"))
 
-number = random.randint(1, 10)
-guess = 0
-cond = True
+fact = number
+for i in range(number-1, 0, -1):
+    fact = fact * i
 
-while cond:
-    guess = int(input("Guess a number from 1 - 10 range \n"))
-    if guess > number:
-        print("Its too high")
-    elif guess < number:
-        print("Its too low")
-    else:
-        print("Correct, you win")
-        cond = False
+print("Factorial of", number, "is", fact)
