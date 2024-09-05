@@ -1,7 +1,16 @@
-number = int(input("Enter a number \n"))
+number = int(input("Enter number of terms \n"))
+print("---------------")
 
-fact = number
-for i in range(number-1, 0, -1):
-    fact = fact * i
+fib1 = 0
+fib2 = 1
+fib = 0
 
-print("Factorial of", number, "is", fact)
+print(fib1)
+print(fib2)
+
+for i in range(0, number-2):
+    fib = fib1 + fib2
+    print (fib)
+    fib1 = fib2
+    fib2 = fib
+
