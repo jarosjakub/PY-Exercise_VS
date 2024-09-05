@@ -1,11 +1,12 @@
-number = int(input("How many numbers will you enter? \n"))
-count = 0
-num_max = 0
+enter = float(input("Enter a decimal number \n"))
+number = int(enter)
+num = number
+temp = ""
+bin_number = ""
 
-while count < num_of_num:
-    num = int(input("Enter a number \n"))
-    count += 1
-    if num > num_max:
-        num_max = num
+while num != 0:
+    temp = str(num % 2) 
+    num = int(num / 2)
+    bin_number = temp + bin_number
 
-print("The biggest number is ", num_max)
+print(enter, "in binary is", bin_number)
