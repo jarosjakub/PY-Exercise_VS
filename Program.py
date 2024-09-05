@@ -1,12 +1,15 @@
-enter = float(input("Enter a decimal number \n"))
-number = int(enter)
-num = number
-temp = ""
-bin_number = ""
+import random
 
-while num != 0:
-    temp = str(num % 2) 
-    num = int(num / 2)
-    bin_number = temp + bin_number
+number = random.randint(1, 10)
+guess = 0
+cond = True
 
-print(enter, "in binary is", bin_number)
+while cond:
+    guess = int(input("Guess a number from 1 - 10 range \n"))
+    if guess > number:
+        print("Its too high")
+    elif guess < number:
+        print("Its too low")
+    else:
+        print("Correct, you win")
+        cond = False
