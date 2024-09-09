@@ -14,3 +14,11 @@
 #     s_order = s_order + s_min
     
 # print(s_order) 
+
+# ---------------------------------------or
+# s = input("Enter a string \n")
+# s_order = ""
+# l = sorted(s)
+# s_order = "".join(l)
+    
+# print(s_order) 
