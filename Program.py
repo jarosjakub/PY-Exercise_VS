@@ -1,6 +1,10 @@
-s = input("Enter a item name \n")
-p = input("Enter a price \n")
+pass1 = input("Enter a passwrod \n")
+pass2 = input("Confirm your password \n")
 
-data = s.ljust(25-len(p), ".")+p
+if pass1 == pass2:
+    print("Password ok")
+elif pass1.casefold() == pass2.casefold():
+    print("Passwords are not the same; check your cases")
+else:
+    print("Passwords are not the same")
 
-print(data)
