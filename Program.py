@@ -1,10 +1,8 @@
-string = input("Enter a string \n")
+date = input("Enter a date in dd/mm/yyyy format \n")
 
-l = len(string)
-pal = ""
+sdate = date.split("/")
 
-for i in range(l, 0, -1):
-    pal = pal + string[i-1]
-
-print(string + pal)
+print("Day:", sdate[0])
+print("Month:", sdate[1])
+print("Year:", sdate[2])
  

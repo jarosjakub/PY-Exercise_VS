@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Challenge84.py" />
     <Compile Include="Challenge83.py" />
     <Compile Include="Challenge82.py" />
     <Compile Include="Challenge81.py" />
