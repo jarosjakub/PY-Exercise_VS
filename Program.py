@@ -1,7 +1,10 @@
-cnum = input("Enter your email \n")
+string = input("Enter a string \n")
 
-split = cnum.split("@")
+l = len(string)
+pal = ""
 
-print("The user id is:", split[0])
-print("The domain name is:", split[1])
+for i in range(l, 0, -1):
+    pal = pal + string[i-1]
 
+print(string + pal)
+ 
