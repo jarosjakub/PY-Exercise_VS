@@ -1,12 +1,9 @@
 s = input("Enter a string \n")
 
-up = ""
-low = ""
-
 for i in s:
-    if i.islower():
-        low = low + i
-    elif i.isupper():
-        up = up + i
+    if i.isalnum():
+        pass
+    else:
+        s = s.replace(i, "")
 
-print(low + up)
+print(s)
