@@ -1,30 +1,12 @@
-s1 = input("Enter a string \n")
-s2 = input("Enter another string \n")
+s = input("Enter a string \n")
 
-l1 = len(s1)
-l2 = len(s2)
+up = ""
+low = ""
 
-if l1 -- l2:
-    pass
-else:
-    print("different lenght of strings")
+for i in s:
+    if i.islower():
+        low = low + i
+    elif i.isupper():
+        up = up + i
 
-f = 0
-anagram = True
-
-for i in range(0, l2):
-    if s2.find(s1[i]) >= 0:
-        pass
-    else:
-        anagram = False
-
-for i in range(0, l1):
-    if s1.find(s2[i]) >= 0:
-        pass
-    else:
-        anagram = False
-
-if anagram:
-     print ("The strings are anagram")
-else:
-    print ("The strings are not anagram")
+print(low + up)
